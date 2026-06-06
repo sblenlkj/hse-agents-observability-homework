@@ -1,0 +1,555 @@
+[
+  {
+    "name": "agent.run",
+    "kind": "agent",
+    "duration_ms": 0.102,
+    "attributes": {
+      "query": "Что идёт сегодня вечером?"
+    },
+    "error": null,
+    "children": [
+      {
+        "name": "llm.step_0",
+        "kind": "llm",
+        "duration_ms": 0.041,
+        "attributes": {
+          "gen_ai.system": "mock",
+          "gen_ai.request.model": "large",
+          "gen_ai.usage.input_tokens": 209,
+          "gen_ai.usage.output_tokens": 18,
+          "gen_ai.usage.cached_tokens": 0,
+          "cost_usd": 0.000897
+        },
+        "error": null,
+        "children": []
+      },
+      {
+        "name": "tool.search_showings",
+        "kind": "tool",
+        "duration_ms": 0.009,
+        "attributes": {
+          "tool.name": "search_showings",
+          "tool.args": {
+            "date": "today"
+          },
+          "error": null
+        },
+        "error": null,
+        "children": []
+      },
+      {
+        "name": "llm.step_1",
+        "kind": "llm",
+        "duration_ms": 0.043,
+        "attributes": {
+          "gen_ai.system": "mock",
+          "gen_ai.request.model": "large",
+          "gen_ai.usage.input_tokens": 673,
+          "gen_ai.usage.output_tokens": 64,
+          "gen_ai.usage.cached_tokens": 0,
+          "cost_usd": 0.002979
+        },
+        "error": null,
+        "children": []
+      }
+    ]
+  },
+  {
+    "name": "agent.run",
+    "kind": "agent",
+    "duration_ms": 0.07,
+    "attributes": {
+      "query": "Есть ли билеты на «Дюну» на сегодня?"
+    },
+    "error": null,
+    "children": [
+      {
+        "name": "llm.step_0",
+        "kind": "llm",
+        "duration_ms": 0.024,
+        "attributes": {
+          "gen_ai.system": "mock",
+          "gen_ai.request.model": "large",
+          "gen_ai.usage.input_tokens": 211,
+          "gen_ai.usage.output_tokens": 18,
+          "gen_ai.usage.cached_tokens": 0,
+          "cost_usd": 0.0009029999999999999
+        },
+        "error": null,
+        "children": []
+      },
+      {
+        "name": "tool.search_showings",
+        "kind": "tool",
+        "duration_ms": 0.007,
+        "attributes": {
+          "tool.name": "search_showings",
+          "tool.args": {
+            "date": "today"
+          },
+          "error": null
+        },
+        "error": null,
+        "children": []
+      },
+      {
+        "name": "llm.step_1",
+        "kind": "llm",
+        "duration_ms": 0.034,
+        "attributes": {
+          "gen_ai.system": "mock",
+          "gen_ai.request.model": "large",
+          "gen_ai.usage.input_tokens": 675,
+          "gen_ai.usage.output_tokens": 64,
+          "gen_ai.usage.cached_tokens": 0,
+          "cost_usd": 0.002985
+        },
+        "error": null,
+        "children": []
+      }
+    ]
+  },
+  {
+    "name": "agent.run",
+    "kind": "agent",
+    "duration_ms": 0.054,
+    "attributes": {
+      "query": "Хочу посмотреть что-нибудь семейное с ребёнком 7 лет"
+    },
+    "error": null,
+    "children": [
+      {
+        "name": "llm.step_0",
+        "kind": "llm",
+        "duration_ms": 0.022,
+        "attributes": {
+          "gen_ai.system": "mock",
+          "gen_ai.request.model": "large",
+          "gen_ai.usage.input_tokens": 215,
+          "gen_ai.usage.output_tokens": 20,
+          "gen_ai.usage.cached_tokens": 0,
+          "cost_usd": 0.0009449999999999999
+        },
+        "error": null,
+        "children": []
+      },
+      {
+        "name": "tool.search_showings",
+        "kind": "tool",
+        "duration_ms": 0.005,
+        "attributes": {
+          "tool.name": "search_showings",
+          "tool.args": {
+            "genre_stem": "семейн"
+          },
+          "error": null
+        },
+        "error": null,
+        "children": []
+      },
+      {
+        "name": "llm.step_1",
+        "kind": "llm",
+        "duration_ms": 0.022,
+        "attributes": {
+          "gen_ai.system": "mock",
+          "gen_ai.request.model": "large",
+          "gen_ai.usage.input_tokens": 356,
+          "gen_ai.usage.output_tokens": 33,
+          "gen_ai.usage.cached_tokens": 0,
+          "cost_usd": 0.001563
+        },
+        "error": null,
+        "children": []
+      }
+    ]
+  },
+  {
+    "name": "agent.run",
+    "kind": "agent",
+    "duration_ms": 0.061,
+    "attributes": {
+      "query": "Какая политика возврата билетов?"
+    },
+    "error": null,
+    "children": [
+      {
+        "name": "llm.step_0",
+        "kind": "llm",
+        "duration_ms": 0.022,
+        "attributes": {
+          "gen_ai.system": "mock",
+          "gen_ai.request.model": "large",
+          "gen_ai.usage.input_tokens": 210,
+          "gen_ai.usage.output_tokens": 15,
+          "gen_ai.usage.cached_tokens": 0,
+          "cost_usd": 0.0008550000000000001
+        },
+        "error": null,
+        "children": []
+      },
+      {
+        "name": "tool.search_showings",
+        "kind": "tool",
+        "duration_ms": 0.006,
+        "attributes": {
+          "tool.name": "search_showings",
+          "tool.args": {},
+          "error": null
+        },
+        "error": null,
+        "children": []
+      },
+      {
+        "name": "llm.step_1",
+        "kind": "llm",
+        "duration_ms": 0.03,
+        "attributes": {
+          "gen_ai.system": "mock",
+          "gen_ai.request.model": "large",
+          "gen_ai.usage.input_tokens": 671,
+          "gen_ai.usage.output_tokens": 64,
+          "gen_ai.usage.cached_tokens": 0,
+          "cost_usd": 0.002973
+        },
+        "error": null,
+        "children": []
+      }
+    ]
+  },
+  {
+    "name": "agent.run",
+    "kind": "agent",
+    "duration_ms": 0.178,
+    "attributes": {
+      "query": "Забронируй два места на «Дюну» на 21:00 на сегодня"
+    },
+    "error": null,
+    "children": [
+      {
+        "name": "llm.step_0",
+        "kind": "llm",
+        "duration_ms": 0.131,
+        "attributes": {
+          "gen_ai.system": "mock",
+          "gen_ai.request.model": "large",
+          "gen_ai.usage.input_tokens": 215,
+          "gen_ai.usage.output_tokens": 32,
+          "gen_ai.usage.cached_tokens": 0,
+          "cost_usd": 0.001125
+        },
+        "error": null,
+        "children": []
+      },
+      {
+        "name": "tool.search_showings",
+        "kind": "tool",
+        "duration_ms": 0.006,
+        "attributes": {
+          "tool.name": "search_showings",
+          "tool.args": {
+            "date": "today"
+          },
+          "error": null
+        },
+        "error": null,
+        "children": []
+      },
+      {
+        "name": "tool.check_seats",
+        "kind": "tool",
+        "duration_ms": 0.012,
+        "attributes": {
+          "tool.name": "check_seats",
+          "tool.args": {
+            "showing_id": "s001"
+          },
+          "error": null
+        },
+        "error": null,
+        "children": []
+      },
+      {
+        "name": "tool.reserve_seats",
+        "kind": "tool",
+        "duration_ms": 0.003,
+        "attributes": {
+          "tool.name": "reserve_seats",
+          "tool.args": {
+            "showing_id": "s001",
+            "seats": [
+              "R1-S1",
+              "R1-S2"
+            ],
+            "user_id": "current"
+          },
+          "error": null
+        },
+        "error": null,
+        "children": []
+      },
+      {
+        "name": "llm.step_1",
+        "kind": "llm",
+        "duration_ms": 0.018,
+        "attributes": {
+          "gen_ai.system": "mock",
+          "gen_ai.request.model": "large",
+          "gen_ai.usage.input_tokens": 301,
+          "gen_ai.usage.output_tokens": 24,
+          "gen_ai.usage.cached_tokens": 0,
+          "cost_usd": 0.001263
+        },
+        "error": null,
+        "children": []
+      }
+    ]
+  },
+  {
+    "name": "agent.run",
+    "kind": "agent",
+    "duration_ms": 0.04,
+    "attributes": {
+      "query": "Сколько у меня баллов лояльности?"
+    },
+    "error": null,
+    "children": [
+      {
+        "name": "llm.step_0",
+        "kind": "llm",
+        "duration_ms": 0.021,
+        "attributes": {
+          "gen_ai.system": "mock",
+          "gen_ai.request.model": "large",
+          "gen_ai.usage.input_tokens": 211,
+          "gen_ai.usage.output_tokens": 19,
+          "gen_ai.usage.cached_tokens": 0,
+          "cost_usd": 0.000918
+        },
+        "error": null,
+        "children": []
+      },
+      {
+        "name": "tool.check_loyalty",
+        "kind": "tool",
+        "duration_ms": 0.001,
+        "attributes": {
+          "tool.name": "check_loyalty",
+          "tool.args": {
+            "user_id": "current"
+          },
+          "error": null
+        },
+        "error": null,
+        "children": []
+      },
+      {
+        "name": "llm.step_1",
+        "kind": "llm",
+        "duration_ms": 0.014,
+        "attributes": {
+          "gen_ai.system": "mock",
+          "gen_ai.request.model": "large",
+          "gen_ai.usage.input_tokens": 272,
+          "gen_ai.usage.output_tokens": 17,
+          "gen_ai.usage.cached_tokens": 0,
+          "cost_usd": 0.001071
+        },
+        "error": null,
+        "children": []
+      }
+    ]
+  },
+  {
+    "name": "agent.run",
+    "kind": "agent",
+    "duration_ms": 0.051,
+    "attributes": {
+      "query": "Что нового из фантастики?"
+    },
+    "error": null,
+    "children": [
+      {
+        "name": "llm.step_0",
+        "kind": "llm",
+        "duration_ms": 0.018,
+        "attributes": {
+          "gen_ai.system": "mock",
+          "gen_ai.request.model": "large",
+          "gen_ai.usage.input_tokens": 209,
+          "gen_ai.usage.output_tokens": 21,
+          "gen_ai.usage.cached_tokens": 0,
+          "cost_usd": 0.0009419999999999999
+        },
+        "error": null,
+        "children": []
+      },
+      {
+        "name": "tool.search_showings",
+        "kind": "tool",
+        "duration_ms": 0.006,
+        "attributes": {
+          "tool.name": "search_showings",
+          "tool.args": {
+            "genre_stem": "фантастик"
+          },
+          "error": null
+        },
+        "error": null,
+        "children": []
+      },
+      {
+        "name": "llm.step_1",
+        "kind": "llm",
+        "duration_ms": 0.024,
+        "attributes": {
+          "gen_ai.system": "mock",
+          "gen_ai.request.model": "large",
+          "gen_ai.usage.input_tokens": 492,
+          "gen_ai.usage.output_tokens": 64,
+          "gen_ai.usage.cached_tokens": 0,
+          "cost_usd": 0.0024360000000000002
+        },
+        "error": null,
+        "children": []
+      }
+    ]
+  },
+  {
+    "name": "agent.run",
+    "kind": "agent",
+    "duration_ms": 0.066,
+    "attributes": {
+      "query": "Есть ли свободные места на «Мастера и Маргариту» завтра?"
+    },
+    "error": null,
+    "children": [
+      {
+        "name": "llm.step_0",
+        "kind": "llm",
+        "duration_ms": 0.047,
+        "attributes": {
+          "gen_ai.system": "mock",
+          "gen_ai.request.model": "large",
+          "gen_ai.usage.input_tokens": 216,
+          "gen_ai.usage.output_tokens": 19,
+          "gen_ai.usage.cached_tokens": 0,
+          "cost_usd": 0.000933
+        },
+        "error": null,
+        "children": []
+      },
+      {
+        "name": "tool.check_seats",
+        "kind": "tool",
+        "duration_ms": 0.002,
+        "attributes": {
+          "tool.name": "check_seats",
+          "tool.args": {
+            "showing_id": "auto"
+          },
+          "error": "сеанс auto не найден"
+        },
+        "error": "сеанс auto не найден",
+        "children": []
+      },
+      {
+        "name": "llm.step_1",
+        "kind": "llm",
+        "duration_ms": 0.013,
+        "attributes": {
+          "gen_ai.system": "mock",
+          "gen_ai.request.model": "large",
+          "gen_ai.usage.input_tokens": 265,
+          "gen_ai.usage.output_tokens": 16,
+          "gen_ai.usage.cached_tokens": 0,
+          "cost_usd": 0.0010350000000000001
+        },
+        "error": null,
+        "children": []
+      }
+    ]
+  },
+  {
+    "name": "agent.run",
+    "kind": "agent",
+    "duration_ms": 0.039,
+    "attributes": {
+      "query": "Покажи расписание ужасов на сегодня"
+    },
+    "error": null,
+    "children": [
+      {
+        "name": "llm.step_0",
+        "kind": "llm",
+        "duration_ms": 0.018,
+        "attributes": {
+          "gen_ai.system": "mock",
+          "gen_ai.request.model": "large",
+          "gen_ai.usage.input_tokens": 211,
+          "gen_ai.usage.output_tokens": 24,
+          "gen_ai.usage.cached_tokens": 0,
+          "cost_usd": 0.000993
+        },
+        "error": null,
+        "children": []
+      },
+      {
+        "name": "tool.search_showings",
+        "kind": "tool",
+        "duration_ms": 0.004,
+        "attributes": {
+          "tool.name": "search_showings",
+          "tool.args": {
+            "genre_stem": "ужас",
+            "date": "today"
+          },
+          "error": null
+        },
+        "error": null,
+        "children": []
+      },
+      {
+        "name": "llm.step_1",
+        "kind": "llm",
+        "duration_ms": 0.014,
+        "attributes": {
+          "gen_ai.system": "mock",
+          "gen_ai.request.model": "large",
+          "gen_ai.usage.input_tokens": 306,
+          "gen_ai.usage.output_tokens": 20,
+          "gen_ai.usage.cached_tokens": 0,
+          "cost_usd": 0.001218
+        },
+        "error": null,
+        "children": []
+      }
+    ]
+  },
+  {
+    "name": "agent.run",
+    "kind": "agent",
+    "duration_ms": 0.019,
+    "attributes": {
+      "query": "Привет, ты кто?"
+    },
+    "error": null,
+    "children": [
+      {
+        "name": "llm.step_0",
+        "kind": "llm",
+        "duration_ms": 0.018,
+        "attributes": {
+          "gen_ai.system": "mock",
+          "gen_ai.request.model": "large",
+          "gen_ai.usage.input_tokens": 206,
+          "gen_ai.usage.output_tokens": 34,
+          "gen_ai.usage.cached_tokens": 0,
+          "cost_usd": 0.001128
+        },
+        "error": null,
+        "children": []
+      }
+    ]
+  }
+]
