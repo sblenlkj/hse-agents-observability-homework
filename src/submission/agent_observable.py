@@ -114,32 +114,6 @@ class Tracer:
         return self.root.to_dict()
 
 
-class TraceContext:
-    """Tiny context-manager wrapper over Tracer.start_span/end_span."""
-
-    def __init__(self, tracer: Tracer, name: str, kind: str, **attributes: Any) -> None:
-        self._tracer = tracer
-        self._name = name
-        self._kind = kind
-        self._attributes = attributes
-        self.span: Span | None = None
-
-    def __enter__(self) -> Span:
-        self.span = self._tracer.start_span(self._name, self._kind, **self._attributes)
-        return self.span
-
-    def __exit__(self, exc_type: Any, exc: BaseException | None, traceback: Any) -> bool | None:
-        if exc is not None:
-            self._tracer.end_span(error=f"{type(exc).__name__}: {exc}")
-            return None
-
-        # Normal close is usually done explicitly to pass outputs/attributes.
-        if self.span is not None and self.span.end_ts is None and self._tracer._stack:
-            if self._tracer._stack[-1] is self.span:
-                self._tracer.end_span()
-        return None
-
-
 def _llm_attributes(response: dict[str, Any]) -> dict[str, Any]:
     usage = response["usage"]
     model = response["model"]
