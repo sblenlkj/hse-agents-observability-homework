@@ -1,4 +1,4 @@
-# Production AI-агент «Кадр» · Homework Module 6
+# Production AI-агент «Кадр»
 
 Это решение для домашнего задания по production-ready AI-агенту сети кинотеатров «Кадр».
 
